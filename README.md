@@ -757,3 +757,5 @@ To contribute, see the [Contributing guide](https://github.com/arifszn/gitprofil
 ## 📄 License
 
 [MIT](https://github.com/arifszn/gitprofile/blob/main/LICENSE)
+# Portfolio
+A sleek  portfolio website showcasing my skills, projects, and experiences. Built with Next.js and Typescript, offering visitors a concise and engaging experience.
