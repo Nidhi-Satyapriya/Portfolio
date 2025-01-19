@@ -33,7 +33,6 @@ const CONFIG = {
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
           title: 'Project Name',
@@ -88,18 +87,19 @@ const CONFIG = {
   skills: [
     'Machine Learning',
     'Deep Learning',
-    'React.js',
-    'Node.js',
+    'MERN Stack',
+    'Tailwind',
     'MySQL',
-    'MongoDB',
     'JavaScript',
     'Java',
     'Python',
     'C++',    
-    'Git',
-    'Docker',
-    'Tailwind',
-  ],
+    'Git, Github',
+    'Microsoft Azure',
+    'CI/CD (Github Actions)',
+    'Restful APIs (Flask, FastAPI)',
+      ],
+      
   experiences: [
     {
       company: 'Quamin AgriCare Solutions',
@@ -118,10 +118,16 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Oracle Cloud Infrastructure 2024 Generative AI Certified Professional',
+      body: 'Validates expertise in Generative AI concepts, prompt engineering and building AI solutions using cloud tools.',
+      year: 'June 2024',
+      link: 'https://drive.google.com/file/d/1GapkYOsLLJvEXBQsjZz-H5otIuZDKZaG/view',
+    },
+    {
+      name: 'Machine Learning Specialization',
+      body: 'A comprehensive program covering core ML concepts, supervised and unsupervised learning, and advanced algorithms to build and deploy AI solutions.',
+      year: 'August 2024',
+      link: 'https://drive.google.com/file/d/15cYkn6J2B0LEOqHMMUbDN-d5QWU9vijh/view',
     },
   ],
   educations: [
