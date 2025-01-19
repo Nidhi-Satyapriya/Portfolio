@@ -32,23 +32,23 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'My Major Projects',
       projects: [
         {
-          title: 'Project Name',
+          title: 'EcoWatch: AI Detection & Alert System with Real-Time Data Visualization Dashboard',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics. The system processes live data from the AI model, generating alerts when specific metrics are violated, while dynamically updating insights on the dashboard. Authorities and users can track detections, alerts, and analytics in real time, offering a comprehensive, end-to-end solution for cleanliness monitoring.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            './pics/image.png',
+          link: 'https://github.com/dopTrashTrackers',
         },
         {
-          title: 'Project Name',
+          title: 'TrendSage: Smart Analytics & Business Growth Engine',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            "This platform uses GenAI to analyze an organization's area of work and suggests innovative use cases and resources tailored to its needs. By integrating Haystack, it generates actionable insights with resource links that help startups and businesses identify trends, improve strategies, and foster growth. Ideal for businesses seeking to leverage AI for trend analysis, the platform empowers organizations with personalized recommendations to drive success.",
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://blog.hcode.tech/blog/wp-content/uploads/2024/04/GenAI-1024x576.jpg',
+          link: 'https://github.com/Nidhi-Satyapriya/InsightGenAI',
         },
       ],
     },
@@ -99,7 +99,7 @@ const CONFIG = {
     'CI/CD (Github Actions)',
     'Restful APIs (Flask, FastAPI)',
       ],
-      
+
   experiences: [
     {
       company: 'Quamin AgriCare Solutions',
@@ -148,7 +148,7 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: '',
       conferenceName: '',
       journalName: 'Journal Name',
       authors: 'John Doe, Jane Smith',
