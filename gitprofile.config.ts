@@ -68,13 +68,13 @@ const CONFIG = {
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '', 
     udemy: '',
     kaggle: 'nidhisatyapriya',
     behance: '',
     medium: '',
     dev: 'dev_nidhiSp',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    stackoverflow: '', 
     skype: '',
     telegram: '',
     website: '',
@@ -126,16 +126,18 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Indian Institute of Information Technology (IIIT), Bhagalpur',
+      degree: 'B. Tech',
+      from: '2022',
+      to: '2026',
+      cgpa: '8.95',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'St. Thomas College',
+      degree: 'Senior Secondary School ',
+      from: '2021',
+      to: '2022',
+      percentage: '93.5%',
     },
   ],
   publications: [
