@@ -223,7 +223,7 @@ interface Experience {
   companyLink?: string;
 }
 
-interface Certification {
+interface Certifications {
   body?: string;
   name?: string;
   year?: string;

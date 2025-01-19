@@ -77,7 +77,7 @@ const CONFIG = {
     skype: '',
     telegram: '',
     website: '',
-    phone: '',
+    phone: '+91 9199234764',
     email: 'satyapriyanidhi@gmail.com',
   },
   resume: {
