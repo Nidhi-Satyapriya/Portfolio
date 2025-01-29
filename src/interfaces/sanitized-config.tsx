@@ -89,15 +89,17 @@ export interface SanitizedEducation {
   degree?: string;
   from: string;
   to: string;
+  cgOrPercentage?: string; 
 }
 
 export interface SanitizedPublication {
   title: string;
-  conferenceName?: string;
-  journalName?: string;
-  authors?: string;
+  // conferenceName?: string;
+  // journalName?: string;
+  // authors?: string;
   link?: string;
   description?: string;
+  image?: string;
 }
 
 export interface SanitizedGoogleAnalytics {

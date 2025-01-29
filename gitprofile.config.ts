@@ -27,7 +27,7 @@ const CONFIG = {
         // Properties for manually specifying projects
         projects: ['nidhi-satyapriya/ML-Enhanced-WebApp-Firewall', 'nidhi-satyapriya/LeafAlert-Early_Detection_Better_Protection', 
           'nidhi-satyapriya/RAPIDOC-HEALTHCARE-WEBSITE-', 'nidhi-satyapriya/LeetCodeLegacy', 'nidhi-satyapriya/Stackoverflow-Analysis',
-          'nidhi-satyapriya/machine-learning-repos', 'nidhi-satyapriya/Beautiify', 'nidhi-satyapriya/AutoEDA-Automated-Data-Preprocessing-Toolkit'
+          'nidhi-satyapriya/machine-learning-repos', 'nidhi-satyapriya/Beautiify', 'S-W-E-T/Visitor-Entry-Register-System'
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
@@ -136,34 +136,53 @@ const CONFIG = {
       degree: 'B. Tech',
       from: '2022',
       to: '2026',
-      cgpa: '8.95',
+      cgOrPercentage: '8.95',
     },
     {
       institution: 'St. Thomas College',
       degree: 'Senior Secondary School ',
       from: '2021',
       to: '2022',
-      percentage: '93.5%',
+      cgOrPercentage: '93.5%',
     },
   ],
   publications: [
     {
-      title: '',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
+      title: 'Launched the Official Website of EBSB Board',
+      // conferenceName: '',
+      // journalName: 'Journal Name',
+      // authors: 'John Doe, Jane Smith',
       link: 'https://example.com',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Developed and launched the official EBSB Board website for IIIT Bhagalpur, catering to the college community, achieving 500+ views since its launch.',
+    },
+
+    {
+      title: 'SIH 2024 Finalist',
+      // conferenceName: '',
+      // journalName: 'Journal Name',
+      // authors: 'John Doe, Jane Smith',
+      link: 'https://example.com',
+      description:
+        'Ranked #2 among 7 finalist teams selected for the Grand Finale of Smart India Hackathon (SIH) 2024, showcasing innovation, problem-solving, and technical excellence.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
+      title: 'GirlScript Summer of Code (GSSoC 24) Contributor',
+      // conferenceName: 'Conference Name',
+      // journalName: '',
+      // authors: 'John Doe, Jane Smith',
       link: 'https://example.com',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
+    },
+    {
+      title: 'Solving For India 2023 Regionalist',
+      // conferenceName: 'Conference Name',
+      // journalName: '',
+      // authors: 'John Doe, Jane Smith',
+      link: 'https://example.com',
+      description:
+        'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
@@ -244,13 +263,14 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Made with Next.JS, TypeScript, and inspired by  <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a> and ❤️ | Nidhi Satyapriya`,
 
   enablePWA: true,
 };
+
 
 export default CONFIG;
