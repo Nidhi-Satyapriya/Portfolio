@@ -27,13 +27,21 @@ const CONFIG = {
         // Properties for manually specifying projects
         projects: ['nidhi-satyapriya/ML-Enhanced-WebApp-Firewall', 'nidhi-satyapriya/LeafAlert-Early_Detection_Better_Protection', 
           'nidhi-satyapriya/RAPIDOC-HEALTHCARE-WEBSITE-', 'nidhi-satyapriya/LeetCodeLegacy', 'nidhi-satyapriya/Stackoverflow-Analysis',
-          'nidhi-satyapriya/machine-learning-repos', 'nidhi-satyapriya/Beautiify', 'S-W-E-T/Visitor-Entry-Register-System'
+          'nidhi-satyapriya/machine-learning-repos', 'nidhi-satyapriya/Beautiify', 'S-W-E-T/VERS-backend'
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
       header: 'My Major Projects',
       projects: [
+        {
+          title: 'EcoWatch: AI Detection & Alert System with Real-Time Data Visualization Dashboard',
+          description:
+            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics. The system processes live data from the AI model, generating alerts when specific metrics are violated, while dynamically updating insights on the dashboard. Authorities and users can track detections, alerts, and analytics in real time, offering a comprehensive, end-to-end solution for cleanliness monitoring.',
+          imageUrl:
+            './pics/image.png',
+          link: 'https://github.com/dopTrashTrackers',
+        },
         {
           title: 'EcoWatch: AI Detection & Alert System with Real-Time Data Visualization Dashboard',
           description:
@@ -50,6 +58,7 @@ const CONFIG = {
             'https://blog.hcode.tech/blog/wp-content/uploads/2024/04/GenAI-1024x576.jpg',
           link: 'https://github.com/Nidhi-Satyapriya/InsightGenAI',
         },
+        
       ],
     },
   },
@@ -103,7 +112,7 @@ const CONFIG = {
   experiences: [
     {
       company: 'Quamin AgriCare Solutions',
-      position: 'Lead ML Intern',
+      position: 'Lead ML/ GenAI Intern',
       from: 'November 2024',
       to: 'Present',
       companyLink: 'https://quamin.in/',
@@ -139,7 +148,7 @@ const CONFIG = {
       cgOrPercentage: '8.95',
     },
     {
-      institution: 'St. Thomas College',
+      institution: 'St. Thomas College, Lucknow',
       degree: 'Senior Secondary School ',
       from: '2021',
       to: '2022',
@@ -149,48 +158,73 @@ const CONFIG = {
   publications: [
     {
       title: 'Launched the Official Website of EBSB Board',
-      // conferenceName: '',
-      // journalName: 'Journal Name',
-      // authors: 'John Doe, Jane Smith',
       link: 'https://example.com',
       description:
         'Developed and launched the official EBSB Board website for IIIT Bhagalpur, catering to the college community, achieving 500+ views since its launch.',
     },
 
     {
-      title: 'SIH 2024 Finalist',
-      // conferenceName: '',
-      // journalName: 'Journal Name',
-      // authors: 'John Doe, Jane Smith',
+      title: 'Smart India Hackathon (SIH) 2024 Finalist',
       link: 'https://example.com',
       description:
         'Ranked #2 among 7 finalist teams selected for the Grand Finale of Smart India Hackathon (SIH) 2024, showcasing innovation, problem-solving, and technical excellence.',
     },
     {
-      title: 'GirlScript Summer of Code (GSSoC 24) Contributor',
-      // conferenceName: 'Conference Name',
-      // journalName: '',
-      // authors: 'John Doe, Jane Smith',
+      title: 'Solving For India 2023 Regionalist',
       link: 'https://example.com',
       description:
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
     {
-      title: 'Solving For India 2023 Regionalist',
-      // conferenceName: 'Conference Name',
-      // journalName: '',
-      // authors: 'John Doe, Jane Smith',
+      title: 'GirlScript Summer of Code(GSSoC 24) Contributor',
+      link: 'https://example.com',
+      description:
+        'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
+    },
+    {
+      title: 'Rank 1 in Intra-College Hackathon',
       link: 'https://example.com',
       description:
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
+  
+  // blog: {
+  //   enable: true,
+  //   source: '', // medium | dev
+  //   username: '', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
+
   blog: {
+    enable: true, // Enables the blog section
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    username: 'dev_nidhiSp', // Replace with your Dev.to username
+     limit: 2,
+    sources: [], // Keep empty if not fetching from external APIs
+    hardcodedArticles: [
+      {
+        title: "General Secretary: Ek Bharat, Shreshtha Bharat(EBSB)",
+        link: "https://example.com/machine-learning",
+        publishedAt: "2024-02-07",
+        description:
+          "A deep dive into the fundamentals of machine learning and its real-world applications.",
+        thumbnail: "https://via.placeholder.com/150",
+        categories: ["MachineLearning", "AI", "Technology"],
+      },
+      {
+        title: "Mentor & Brand Ambassdor at GSSoC'24",
+        link: "https://example.com/cybersecurity",
+        publishedAt: "2024-02-10",
+        description:
+          "Exploring the latest cybersecurity threats and how to protect yourself online.",
+        thumbnail: "https://via.placeholder.com/150",
+        categories: ["CyberSecurity", "Tech", "Privacy"],
+      },
+    ],
   },
+
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
