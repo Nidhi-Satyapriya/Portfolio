@@ -37,7 +37,7 @@ const CONFIG = {
         {
           title: 'EcoWatch: AI Detection & Alert System with Real-Time Data Visualization Dashboard',
           description:
-            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics. The system processes live data from the AI model, generating alerts when specific metrics are violated, while dynamically updating insights on the dashboard. Authorities and users can track detections, alerts, and analytics in real time, offering a comprehensive, end-to-end solution for cleanliness monitoring.',
+            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics.',
           imageUrl:
             './pics/image.png',
           link: 'https://github.com/dopTrashTrackers',
@@ -45,7 +45,7 @@ const CONFIG = {
         {
           title: 'EcoWatch: AI Detection & Alert System with Real-Time Data Visualization Dashboard',
           description:
-            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics. The system processes live data from the AI model, generating alerts when specific metrics are violated, while dynamically updating insights on the dashboard. Authorities and users can track detections, alerts, and analytics in real time, offering a comprehensive, end-to-end solution for cleanliness monitoring.',
+            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics.',
           imageUrl:
             './pics/image.png',
           link: 'https://github.com/dopTrashTrackers',
@@ -53,7 +53,7 @@ const CONFIG = {
         {
           title: 'TrendSage: Smart Analytics & Business Growth Engine',
           description:
-            "This platform uses GenAI to analyze an organization's area of work and suggests innovative use cases and resources tailored to its needs. By integrating Haystack, it generates actionable insights with resource links that help startups and businesses identify trends, improve strategies, and foster growth. Ideal for businesses seeking to leverage AI for trend analysis, the platform empowers organizations with personalized recommendations to drive success.",
+            "This platform uses GenAI to analyze an organization's area of work and suggests innovative use cases and resources tailored to its needs.",
           imageUrl:
             'https://blog.hcode.tech/blog/wp-content/uploads/2024/04/GenAI-1024x576.jpg',
           link: 'https://github.com/Nidhi-Satyapriya/InsightGenAI',

@@ -303,7 +303,7 @@ const PublicationCard = ({ publications, loading }) => {
 
   return (
     <Fragment>
-      <div className="relative w-full max-w-5xl mx-auto p-4">
+      <div className="relative w-full max-w-9xl mx-auto p-4">
         <div className="card compact bg-base-100 shadow bg-opacity-40 relative">
           <div className="card-body">
             <div className="flex items-center justify-between mb-2">

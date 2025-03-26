@@ -8,7 +8,6 @@ const ExternalProjectCard = ({
   externalProjects,
   header,
   loading,
-  googleAnalyticId,
 }: {
   externalProjects: SanitizedExternalProject[];
   header: string;
@@ -35,19 +34,19 @@ const ExternalProjectCard = ({
   return (
     <Fragment>
       <div className="col-span-1 lg:col-span-2">
-        <div className="card compact bg-base-100 shadow bg-opacity-40 p-1 ">
-          <div className="card-body">
+        <div className="card compact bg-base-100 shadow bg-opacity-40 p-0.5">
+          <div className="card-body p-1">
             <div className="flex items-center justify-between mb-2">
-              <h5 className="card-title text-lg font-semibold">
+              <h5 className="card-title text-sm font-medium">
                 {loading ? (
-                  skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
+                  skeleton({ widthCls: 'w-4', heightCls: 'h-4' })
                 ) : (
-                  <span className="text-base-content opacity-70">{header}</span>
+                  <span className="text-base-content text-xl opacity-70">{header}</span>
                 )}
               </h5>
             </div>
 
-            <div className="relative p-1">
+            <div className="relative p-0">
               <button
                 onClick={() => scroll('left')}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md hover:bg-gray-300 z-10"
@@ -56,11 +55,11 @@ const ExternalProjectCard = ({
               </button>
 
               {/* Scrollable Projects Container */}
-              <div ref={scrollRef} className="flex overflow-x-auto space-x-9 scrollbar-hide p-2">
+              <div ref={scrollRef} className="flex overflow-x-auto space-x-4 scrollbar-hide p-[8px] ">
                 {loading ? (
                   Array.from({ length: 4 }).map((_, index) => (
-                    <div key={index} className="min-w-[450 px] bg-gray-100 p-2 rounded-lg">
-                      {skeleton({ widthCls: 'w-full', heightCls: 'h-40' })}
+                    <div key={index} className="min-w-[200 px] bg-gray-100 p-1 rounded-sm">
+                      {skeleton({ widthCls: 'w-full', heightCls: 'h-28' })}
                     </div>
                   ))
                 ) : externalProjects.length > 0 ? (
@@ -70,26 +69,26 @@ const ExternalProjectCard = ({
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="card shadow-lg compact bg-base-100 cursor-pointer min-w-[450px]"
+                      className="card shadow-lg compact bg-base-100 cursor-pointer min-w-[350px]"
                     >
-                      <div className="p-1">
+                      <div className="p-4">
                         {/* <h2 className="font-medium opacity-60">{item.title}</h2> */}
-                        <h2 className="text-center  text-xl font-bold font-serif mt-1">{item.title}</h2>
+                        <h2 className="text-center text-base-content font-semibold  opacity-80 text-sm mt-1 mb-4">{item.title}</h2>
                         {item.imageUrl && (
                           <div className="avatar opacity-90">
                             {item.imageUrl && (
-                        <div className="justify- centre w-80 h-40">
-                          <LazyImage src={item.imageUrl} alt="thumbnail" className="w-full object-cover rounded-lg" />
+                        <div className="w-[320px] h-60 mx-auto object-cover rounded-lg border border-gray-700 shadow-md">
+                          <LazyImage src={item.imageUrl} alt="thumbnail" className="w-[320px] h-40 mx-auto object-cover rounded-lg" />
                         </div>
                       )}
                           </div>
                         )}
-                        <p className="mt-2 text-sm opacity-60">{item.description}</p>
+                        <p className="mt-4 text-center text-sm opacity-70">{item.description}</p>
                       </div>
                     </a>
                   ))
                 ) : (
-                  <p className="text-center text-gray-500">No projects found</p>
+                  <p className="mt-2 text-center text-gray-500">No projects found</p>
                 )}
               </div>
 
