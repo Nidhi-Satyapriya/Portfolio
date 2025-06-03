@@ -27,8 +27,8 @@ const CONFIG = {
         // Properties for manually specifying projects
         projects: ['nidhi-satyapriya/ML-Enhanced-WebApp-Firewall', 'nidhi-satyapriya/LeafAlert-Early_Detection_Better_Protection', 
           'nidhi-satyapriya/RAPIDOC-HEALTHCARE-WEBSITE-', 'nidhi-satyapriya/LeetCodeLegacy', 'nidhi-satyapriya/Stackoverflow-Analysis',
-          'nidhi-satyapriya/machine-learning-repos', 'nidhi-satyapriya/Beautiify', 'S-W-E-T/VERS-backend'
-        ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          'Nidhi-Satyapriya/ScholarlyAI--Your-Automated-Blog-Generator', 'Nidhi-Satyapriya/AutoEDA-Automated-Data-Preprocessing-Toolkit', 'S-W-E-T/VERS-backend'
+        ], 
       },
     },
     external: {
@@ -43,20 +43,20 @@ const CONFIG = {
           link: 'https://github.com/dopTrashTrackers',
         },
         {
-          title: 'EcoWatch: AI Detection & Alert System with Real-Time Data Visualization Dashboard',
+          title: 'Ambitus Intelligence: Next-Gen Business Intelligence Extractor',
           description:
-            'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics.',
+            'Ambitus is a Haystack-based multi-agent system that integrates 7+ agents, custom tools, and an MCP server to power a unified web application.',
           imageUrl:
             './pics/image.png',
           link: 'https://github.com/dopTrashTrackers',
         },
         {
-          title: 'TrendSage: Smart Analytics & Business Growth Engine',
+          title: 'CodeXchange: Project Exchange Platform',
           description:
-            "This platform uses GenAI to analyze an organization's area of work and suggests innovative use cases and resources tailored to its needs.",
+            " A MERN stack project platform designed to help freelancers and learners exchange real-world projects for mutual learning, and collaboration.",
           imageUrl:
             'https://blog.hcode.tech/blog/wp-content/uploads/2024/04/GenAI-1024x576.jpg',
-          link: 'https://github.com/Nidhi-Satyapriya/InsightGenAI',
+          link: 'https://github.com/CodeXchange-io/frontend_backend_intg',
         },
         
       ],
@@ -72,7 +72,7 @@ const CONFIG = {
     X: '',
     mastodon: '',
     researchGate: '',
-    discord: 'nidhi_satyapriya',
+    discord: 'nidhi_satyapriye',
     instagram: '',
     reddit: '',
     threads: '',
@@ -91,35 +91,41 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-   'https://drive.google.com/file/d/13ntEHxkKuWmWAH8qYj0zloJgidDVhE4l/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
+   'https://drive.google.com/file/d/1KnS1qSXfk_DKEaAuD3_2eUx13khZqSgj/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Machine Learning',
-    'Deep Learning',
+    'Generative AI',
     'MERN Stack',
     'Tailwind',
+    'Restful APIs (Flask, FastAPI)',
     'MySQL',
     'JavaScript',
     'Java',
-    'Python',
     'C++',    
-    'Git, Github',
-    'Microsoft Azure',
-    'CI/CD (Github Actions)',
-    'Restful APIs (Flask, FastAPI)',
+    'Git/ Github',
+    'CI/CD',
+    'Microsoft Azure'
       ],
 
   experiences: [
     {
+      company: 'Indian Institute of Information Technology (IIT) BHU',
+      position: 'Project Intern',
+      from: 'May 2025',
+      to: 'Present',
+      companyLink: 'https://www.iitbhu.ac.in/dean/dord',
+    },
+    {
       company: 'Quamin AgriCare Solutions',
       position: 'Lead ML/ GenAI Intern',
       from: 'November 2024',
-      to: 'Present',
+      to: 'January 2025',
       companyLink: 'https://quamin.in/',
     },
     {
       company: 'SpyInt Technologies',
-      position: 'ML Intern',
+      position: 'SDE Intern',
       from: 'June 2024',
       to: 'August 2024',
       companyLink: 'https://www.spyint.com/',
@@ -158,52 +164,44 @@ const CONFIG = {
 
   
   publications: [
-    {
-      title: 'Launched the Official Website of EBSB Board',
-      link: 'https://example.com',
+     {
+      title: 'Walmart CodeHers 2025 Finalist',
+      link: '',
       description:
-        'Developed and launched the official EBSB Board website for IIIT Bhagalpur, catering to the college community, achieving 500+ views since its launch.',
+        'Ranked among the top 6% of 100,000+ women coders across India in a national-level coding competition.',
     },
-
     {
       title: 'Smart India Hackathon (SIH) 2024 Finalist',
-      link: 'https://example.com',
+      link: 'https://www.linkedin.com/posts/nidhi-satyapriya-960556249_memory-lifetime-experience-activity-7274167296120492032-oqAP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU',
       description:
         'Ranked #2 among 7 finalist teams selected for the Grand Finale of Smart India Hackathon (SIH) 2024, showcasing innovation, problem-solving, and technical excellence.',
     },
     {
       title: 'Solving For India 2023 Regionalist',
-      link: 'https://example.com',
+      link: 'https://www.linkedin.com/posts/nidhi-satyapriya-960556249_solvingforindia-regionalrounds-amd-activity-7068790761504350208-1TxM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU',
       description:
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
     {
+      title: 'Project Admin @SSOC\'25',
+      link: '',
+      description:
+        ' Leading and managing open-source project contributions under SSOC\'25, reviewing PRs, mentoring contributors, and ensuring project milestones are met.',
+    },
+    {
       title: 'GirlScript Summer of Code(GSSoC 24) Contributor',
-      link: 'https://example.com',
+      link: 'https://www.linkedin.com/posts/nidhi-satyapriya-960556249_gssoc24-opensource-datascience-activity-7228605110145232897-h2HP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU',
       description:
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
     {
       title: 'Rank 1 in Intra-College Hackathon',
-      link: 'https://example.com',
+      link: '',
       description:
-        'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
+        'Ranked 1st among 50+ teams in an Intra-College Hackathon for innovation, effective solution implementation, and compelling presentation.',
     },
   ],
 
-codingProfiles: [
-  {
-    platform: 'GitHub',
-    icon: 'FaGithub',
-    link: 'https://github.com/yourusername',
-  },
-  {
-    platform: 'Codeforces',
-    icon: 'FaCode',
-    link: 'https://codeforces.com/profile/yourusername',
-  },
-],
-  
 
   blog: {
     enable: true, // Enables the blog section
@@ -214,21 +212,21 @@ codingProfiles: [
     hardcodedArticles: [
       {
         title: "Mentor & Brand Ambassdor at GSSoC'24",
-        link: "https://example.com/cybersecurity",
+        link: "https://www.linkedin.com/posts/nidhi-satyapriya-960556249_gssoc-campusambassador-opensource-activity-7245092496614039552-xMAL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU",
         publishedAt: "2024-02-10",
         description:
-          "Exploring the latest cybersecurity threats and how to protect yourself online.",
+          "Mentored 30+ contributors, fostering impactful open-source contributions and community engagement.",
         thumbnail: "https://via.placeholder.com/150",
-        categories: ["CyberSecurity", "Tech", "Privacy"],
+        categories: ["ContributeWithMe", "OpenSourceCommunity", "BuildInPublic"],
       },
       {
         title: "General Secretary: Ek Bharat, Shreshtha Bharat(EBSB)",
-        link: "https://example.com/machine-learning",
+        link: "https://www.linkedin.com/posts/ebsb-board-iiit-bhagalpur_ebsb-iiitbhagalpur-unity-activity-7197588862779494400-s5yG/",
         publishedAt: "2024-02-07",
         description:
-          "A deep dive into the fundamentals of machine learning and its real-world applications.",
+          " Led 10+ cross-functional events in college, engaging 300\+ students, increasing participation by 30%, and improving club visibility",
         thumbnail: "https://via.placeholder.com/150",
-        categories: ["MachineLearning", "AI", "Technology"],
+        categories: ["StudentLeadership", "LeadWithImpact", "EventLeadership"],
       }
     ],
   },

@@ -19,27 +19,27 @@ interface CodingProfileItem {
 const defaultProfiles: CodingProfileItem[] = [
   {
     platform: 'GitHub',
-    link: 'https://github.com/your-username',
+    link: 'https://github.com/Nidhi-Satyapriya',
     icon: <FaGithub />,
   },
   {
     platform: 'LeetCode',
-    link: 'https://leetcode.com/your-username',
+    link: 'https://leetcode.com/u/Nidhi_Satyapriya/',
     icon: <SiLeetcode />,
   },
   {
     platform: 'Codeforces',
-    link: 'https://codeforces.com/profile/your-username',
+    link: 'https://codeforces.com/profile/Satyapriya_Nidhi',
     imgSrc: '/cf.png',
   },
   {
     platform: 'CodeChef',
-    link: 'https://www.codechef.com/users/your-username',
+    link: 'https://www.codechef.com/users/cast_bug_28',
     icon: <SiCodechef />,
   },
   {
     platform: 'GeeksforGeeks',
-    link: 'https://auth.geeksforgeeks.org/user/your-username',
+    link: 'https://www.geeksforgeeks.org/user/satyapriv8jt/',
     icon: <SiGeeksforgeeks />,
   },
 ];

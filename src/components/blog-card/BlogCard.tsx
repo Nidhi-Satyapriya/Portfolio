@@ -30,7 +30,7 @@ const BlogCard = ({ loading }: { loading: boolean }) => {
               <div className="w-full">
                 <div className="flex items-start px-4">
                   <div className="text-center md:text-left w-full">
-                    <h2 className="font-medium text-base-content opacity-60">
+                    <h2 className="text- 2xl font-large font-bold text-base-content opacity-60 mb-2">
                       {article.title}
                     </h2>
                     <p className="text-base-content opacity-50 text-xs">
@@ -74,7 +74,7 @@ const BlogCard = ({ loading }: { loading: boolean }) => {
             <div className="card-body">
               <div className="mx-3 mb-2">
                 <h5 className="card-title">
-                  <span className="text-base-content opacity-70">Latest Blog Posts</span>
+                  <span className="text-base-content opacity-70">Positions of Responsibility </span>
                 </h5>
               </div>
               <div className="col-span-2">
