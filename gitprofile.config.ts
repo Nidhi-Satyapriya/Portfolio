@@ -39,7 +39,7 @@ const CONFIG = {
           description:
             'An advanced solution integrating a custom-trained YOLOv5 AI trash detection model with a live dashboard for seamless monitoring, alert generation, and data analytics.',
           imageUrl:
-            './pics/cleanvision.png',
+            '/pics/cleanvision.png',
           link: 'https://github.com/dopTrashTrackers',
         },
         {
@@ -47,7 +47,7 @@ const CONFIG = {
           description:
             'Ambitus is a Haystack-based multi-agent system that integrates 7+ agents, custom tools, and an MCP server to power a unified web application.',
           imageUrl:
-            './pics/agent.jpg',
+            '/pics/agent.jpg',
           link: 'https://github.com/dopTrashTrackers',
         },
         {
@@ -174,35 +174,35 @@ const CONFIG = {
     {
       title: 'Smart India Hackathon (SIH) 2024 Finalist',
       link: 'https://www.linkedin.com/posts/nidhi-satyapriya-960556249_memory-lifetime-experience-activity-7274167296120492032-oqAP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU',
-      image:'./pics/sih2.jpg',
+      image:'/pics/sih2.jpg',
       description:
         'Ranked #2 among 7 finalist teams selected for the Grand Finale of Smart India Hackathon (SIH) 2024, showcasing innovation, problem-solving, and technical excellence.',
     },
     {
       title: 'Solving For India 2023 Regionalist',
       link: 'https://www.linkedin.com/posts/nidhi-satyapriya-960556249_solvingforindia-regionalrounds-amd-activity-7068790761504350208-1TxM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU',
-      image: './pics/gfgAMD.jpg',
+      image: '/pics/gfgAMD.jpg',
       description:
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
     {
       title: 'Project Admin @SSOC\'25',
       link: '',
-      image:'./pics/PA.png',
+      image:'/pics/PA.png',
       description:
         ' Leading and managing open-source project contributions under SSOC\'25, reviewing PRs, mentoring contributors, and ensuring project milestones are met.',
     },
     {
       title: 'GirlScript Summer of Code(GSSoC 24) Contributor',
       link: 'https://www.linkedin.com/posts/nidhi-satyapriya-960556249_gssoc24-opensource-datascience-activity-7228605110145232897-h2HP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD17ztgBqpS-pJvDmzUh1CbogNWBAcAu3wU',
-      image:'./pics/gssoc.jpg',
+      image:'/pics/gssoc.jpg',
       description:
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
     {
       title: 'Rank 1 in Intra-College Hackathon',
       link: '',
-      image:'./pics/sih.jpeg',
+      image:'/pics/sih.jpeg',
       description:
         'Ranked 1st among 50+ teams in an Intra-College Hackathon for innovation, effective solution implementation, and compelling presentation.',
     },
