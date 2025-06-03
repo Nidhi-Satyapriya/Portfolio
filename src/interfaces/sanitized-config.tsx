@@ -102,6 +102,13 @@ export interface SanitizedPublication {
   image?: string;
 }
 
+export interface CodingProfile {
+  platform: string;
+  link: string;
+  icon: JSX.Element; // The icon is passed as a string identifier (e.g., "GitHub")
+}
+
+
 export interface SanitizedGoogleAnalytics {
   id?: string;
 }
@@ -147,6 +154,7 @@ export interface SanitizedConfig {
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;
+  codingProfiles?: CodingProfile[];
   publications: Array<SanitizedPublication>;
   googleAnalytics: SanitizedGoogleAnalytics;
   hotjar: SanitizedHotjar;

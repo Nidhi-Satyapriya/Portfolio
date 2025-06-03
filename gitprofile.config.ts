@@ -155,6 +155,8 @@ const CONFIG = {
       cgOrPercentage: '93.5%',
     },
   ],
+
+  
   publications: [
     {
       title: 'Launched the Official Website of EBSB Board',
@@ -188,14 +190,30 @@ const CONFIG = {
         'Ranked 216 in GSSoC24 with 7 successful PRs, earning 715 points through contributions in diverse areas including React.js, Data Analysis, and Machine Learning.',
     },
   ],
-  // Display articles from your medium or dev account. (Optional)
+
+codingProfiles: [
+  {
+    platform: 'GitHub',
+    icon: 'FaGithub',
+    link: 'https://github.com/yourusername',
+  },
+  {
+    platform: 'Codepen',
+    icon: 'FaCodepen',
+    link: 'https://codepen.io/yourusername',
+  },
+  {
+    platform: 'Stack Overflow',
+    icon: 'FaStackOverflow',
+    link: 'https://stackoverflow.com/users/youruserid',
+  },
+  {
+    platform: 'Codeforces',
+    icon: 'FaCode',
+    link: 'https://codeforces.com/profile/yourusername',
+  },
+],
   
-  // blog: {
-  //   enable: true,
-  //   source: '', // medium | dev
-  //   username: '', // to hide blog section, keep it empty
-  //   limit: 2, // How many articles to display. Max is 10.
-  // },
 
   blog: {
     enable: true, // Enables the blog section
@@ -205,15 +223,6 @@ const CONFIG = {
     sources: [], // Keep empty if not fetching from external APIs
     hardcodedArticles: [
       {
-        title: "General Secretary: Ek Bharat, Shreshtha Bharat(EBSB)",
-        link: "https://example.com/machine-learning",
-        publishedAt: "2024-02-07",
-        description:
-          "A deep dive into the fundamentals of machine learning and its real-world applications.",
-        thumbnail: "https://via.placeholder.com/150",
-        categories: ["MachineLearning", "AI", "Technology"],
-      },
-      {
         title: "Mentor & Brand Ambassdor at GSSoC'24",
         link: "https://example.com/cybersecurity",
         publishedAt: "2024-02-10",
@@ -222,6 +231,15 @@ const CONFIG = {
         thumbnail: "https://via.placeholder.com/150",
         categories: ["CyberSecurity", "Tech", "Privacy"],
       },
+      {
+        title: "General Secretary: Ek Bharat, Shreshtha Bharat(EBSB)",
+        link: "https://example.com/machine-learning",
+        publishedAt: "2024-02-07",
+        description:
+          "A deep dive into the fundamentals of machine learning and its real-world applications.",
+        thumbnail: "https://via.placeholder.com/150",
+        categories: ["MachineLearning", "AI", "Technology"],
+      }
     ],
   },
 

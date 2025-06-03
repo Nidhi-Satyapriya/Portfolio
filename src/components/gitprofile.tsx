@@ -30,6 +30,40 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import { FaGithub, FaCode, FaCodepen, FaStackOverflow } from 'react-icons/fa';
+import CodingProfile from './coding-profile';
+
+
+const iconMap: Record<string, JSX.Element> = {
+  GitHub: <FaGithub />,
+  Codeforces: <FaCode />,
+  CodePen: <FaCodepen />,
+  'Stack Overflow': <FaStackOverflow />,
+};
+
+
+const defaultCodingProfiles = [
+  {
+    platform: 'GitHub',
+    link: 'https://github.com/your-username',
+    icon: iconMap['GitHub'],
+  },
+  {
+    platform: 'Codeforces',
+    link: 'https://codeforces.com/profile/your-username',
+    icon: iconMap['Codeforces'],
+  },
+  {
+    platform: 'CodePen',
+    link: 'https://codepen.io/your-username',
+    icon: iconMap['CodePen'],
+  },
+  {
+    platform: 'Stack Overflow',
+    link: 'https://stackoverflow.com/users/your-user-id',
+    icon: iconMap['Stack Overflow'],
+  },
+];
 
 /**
  * Renders the GitProfile component.
@@ -242,6 +276,16 @@ const GitProfile = ({ config }: { config: Config }) => {
                         educations={sanitizedConfig.educations}
                       />
                     )}
+                    <CodingProfile loading={loading}
+                        profiles={
+                          sanitizedConfig.codingProfiles && sanitizedConfig.codingProfiles.length > 0
+                            ? sanitizedConfig.codingProfiles.map((profile) => ({
+                                ...profile,
+                                icon: iconMap[profile.platform] || <FaCode />,
+                              }))
+                            : defaultCodingProfiles
+                        }
+                      />
                   </div>
                 </div>
                 <div className="lg:col-span-2 col-span-1">
