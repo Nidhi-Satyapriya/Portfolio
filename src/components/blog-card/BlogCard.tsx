@@ -1,7 +1,7 @@
 import { AiOutlineContainer } from "react-icons/ai";
 import { formatDistance } from "date-fns";
 import LazyImage from "../lazy-image";
-import config from "../../../gitprofile.config"; // Import config
+import config from "../../../gitprofile.config.ts"; // Import config
 
 const BlogCard = ({ loading }: { loading: boolean }) => {
   const articles = config.blog.hardcodedArticles || [];

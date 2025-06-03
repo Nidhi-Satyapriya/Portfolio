@@ -1,7 +1,7 @@
 
 
 import BlogCard from "./BlogCard";
-import config from "../../../gitprofile.config";
+import config from "../../../gitprofile.config.ts";
 
 export default function Home() {
   return (
