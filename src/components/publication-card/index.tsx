@@ -236,7 +236,7 @@
             //   </div>
              
 
-              {/* Right Scroll Button */}
+              /* Right Scroll Button */
                 // <button
                 //   onClick={handleScrollRight}
                 //   className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md"
