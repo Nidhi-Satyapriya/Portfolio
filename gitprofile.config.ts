@@ -198,16 +198,6 @@ codingProfiles: [
     link: 'https://github.com/yourusername',
   },
   {
-    platform: 'Codepen',
-    icon: 'FaCodepen',
-    link: 'https://codepen.io/yourusername',
-  },
-  {
-    platform: 'Stack Overflow',
-    icon: 'FaStackOverflow',
-    link: 'https://stackoverflow.com/users/youruserid',
-  },
-  {
     platform: 'Codeforces',
     icon: 'FaCode',
     link: 'https://codeforces.com/profile/yourusername',

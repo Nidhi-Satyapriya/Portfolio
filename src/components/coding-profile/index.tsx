@@ -1,72 +1,46 @@
+
 import {
   FaGithub,
   FaCode,
-  FaCodepen,
-  FaStackOverflow,
 } from 'react-icons/fa';
 import {
   SiGeeksforgeeks,
   SiLeetcode,
   SiCodechef,
-} from 'react-icons/si'; // from react-icons
+} from 'react-icons/si';
 
 interface CodingProfileItem {
   platform: string;
   link: string;
-  icon: JSX.Element;
+  icon?: JSX.Element;
+  imgSrc?: string;
 }
-
-const iconMap: Record<string, JSX.Element> = {
-  GitHub: <FaGithub />,
-  Codeforces: <FaCode />,
-  CodePen: <FaCodepen />,
-  'Stack Overflow': <FaStackOverflow />,
-  GeeksforGeeks: <SiGeeksforgeeks />,
-  LeetCode: <SiLeetcode />,
-  CodeChef: <SiCodechef />,
-  Codolio: <FaCode />, // No official icon, use fallback
-};
 
 const defaultProfiles: CodingProfileItem[] = [
   {
     platform: 'GitHub',
     link: 'https://github.com/your-username',
-    icon: iconMap['GitHub'],
+    icon: <FaGithub />,
   },
   {
     platform: 'LeetCode',
     link: 'https://leetcode.com/your-username',
-    icon: iconMap['LeetCode'],
+    icon: <SiLeetcode />,
   },
   {
     platform: 'Codeforces',
     link: 'https://codeforces.com/profile/your-username',
-    icon: iconMap['Codeforces'],
-  },
-  {
-    platform: 'CodePen',
-    link: 'https://codepen.io/your-username',
-    icon: iconMap['CodePen'],
-  },
-  {
-    platform: 'Stack Overflow',
-    link: 'https://stackoverflow.com/users/your-user-id',
-    icon: iconMap['Stack Overflow'],
+    imgSrc: '/cf.png',
   },
   {
     platform: 'CodeChef',
     link: 'https://www.codechef.com/users/your-username',
-    icon: iconMap['CodeChef'],
+    icon: <SiCodechef />,
   },
   {
     platform: 'GeeksforGeeks',
     link: 'https://auth.geeksforgeeks.org/user/your-username',
-    icon: iconMap['GeeksforGeeks'],
-  },
-  {
-    platform: 'Codolio',
-    link: 'https://codolio.io/your-username',
-    icon: iconMap['Codolio'],
+    icon: <SiGeeksforgeeks />,
   },
 ];
 
@@ -91,9 +65,23 @@ const CodingProfile = ({
         </div>
         <div className="text-base-content text-opacity-80">
           <ul className="space-y-5 mx-4">
-            {displayProfiles.map(({ platform, link, icon }) => (
+            {displayProfiles.map(({ platform, link, icon, imgSrc }) => (
               <li key={platform} className="flex items-center space-x-4">
-                <span className="text-2xl text-primary">{icon}</span>
+                <span className="text-2xl text-primary">
+                  {icon ? (
+                    icon
+                  ) : imgSrc ? (
+                    <img
+                      src={imgSrc}
+                      alt={`${platform} icon`}
+                      width={24}
+                      height={24}
+                      className="rounded"
+                    />
+                  ) : (
+                    <FaCode />
+                  )}
+                </span>
                 <a
                   href={link}
                   target="_blank"

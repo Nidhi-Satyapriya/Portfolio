@@ -30,15 +30,22 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
-import { FaGithub, FaCode, FaCodepen, FaStackOverflow } from 'react-icons/fa';
 import CodingProfile from './coding-profile';
+
+import {
+  FaGithub,
+  FaCode,
+} from 'react-icons/fa';
+import {
+  SiGeeksforgeeks,
+  SiLeetcode,
+  SiCodechef,
+} from 'react-icons/si';
 
 
 const iconMap: Record<string, JSX.Element> = {
   GitHub: <FaGithub />,
   Codeforces: <FaCode />,
-  CodePen: <FaCodepen />,
-  'Stack Overflow': <FaStackOverflow />,
 };
 
 
@@ -48,20 +55,26 @@ const defaultCodingProfiles = [
     link: 'https://github.com/your-username',
     icon: iconMap['GitHub'],
   },
+    {
+    platform: 'LeetCode',
+    link: 'https://leetcode.com/your-username',
+    icon: <SiLeetcode />,
+  },
   {
     platform: 'Codeforces',
     link: 'https://codeforces.com/profile/your-username',
     icon: iconMap['Codeforces'],
   },
+  
   {
-    platform: 'CodePen',
-    link: 'https://codepen.io/your-username',
-    icon: iconMap['CodePen'],
+    platform: 'CodeChef',
+    link: 'https://www.codechef.com/users/your-username',
+    icon: <SiCodechef />,
   },
   {
-    platform: 'Stack Overflow',
-    link: 'https://stackoverflow.com/users/your-user-id',
-    icon: iconMap['Stack Overflow'],
+    platform: 'GeeksforGeeks',
+    link: 'https://auth.geeksforgeeks.org/user/your-username',
+    icon: <SiGeeksforgeeks />,
   },
 ];
 
