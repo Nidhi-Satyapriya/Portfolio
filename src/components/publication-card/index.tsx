@@ -345,6 +345,7 @@ const PublicationCard = ({ publications, loading }) => {
                   ))
                 ) : (
                   publications.map((item, index) => (
+                    
                     <a
                       className="min-w-[350px] card shadow-lg compact bg-base-100 cursor-pointer"
                       key={index}

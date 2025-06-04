@@ -1,8 +1,4 @@
-
-import {
-  FaGithub,
-  FaCode,
-} from 'react-icons/fa';
+import { FaGithub, FaCode } from 'react-icons/fa';
 import {
   SiGeeksforgeeks,
   SiLeetcode,
@@ -30,7 +26,7 @@ const defaultProfiles: CodingProfileItem[] = [
   {
     platform: 'Codeforces',
     link: 'https://codeforces.com/profile/Satyapriya_Nidhi',
-    imgSrc: '/cf.png',
+    imgSrc: '/cf.png', // should be inside /public directory
   },
   {
     platform: 'CodeChef',
@@ -51,9 +47,28 @@ const CodingProfile = ({
   loading: boolean;
   profiles: CodingProfileItem[] | undefined;
 }) => {
-  const displayProfiles = profiles && profiles.length > 0 ? profiles : defaultProfiles;
+  // Merge incoming profiles with the default ones
+  const displayProfiles: CodingProfileItem[] =
+    profiles && profiles.length > 0
+      ? profiles.map((profile) => {
+          const correct = defaultProfiles.find(
+            (d) => d.platform === profile.platform
+          );
+          return {
+            ...profile,
+            link: correct?.link || profile.link,
+            icon: correct?.icon || profile.icon,
+            imgSrc: correct?.imgSrc || profile.imgSrc,
+          };
+        })
+      : defaultProfiles;
 
-  if (loading) return <div className="card bg-base-100 shadow p-4">Loading...</div>;
+  // Debug: log the final profile list
+ // console.log('Final Display Profiles:', displayProfiles);
+
+  if (loading) {
+    return <div className="card bg-base-100 shadow p-4">Loading...</div>;
+  }
 
   return (
     <div className="card shadow-lg compact bg-base-100">
